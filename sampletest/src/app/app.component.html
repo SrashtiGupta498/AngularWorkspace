@@ -11,7 +11,7 @@
     <input name ="title"#newtitle>
   </div>
 
-  
+
   <div class= "field">
     <label for ="link">Link</label>
     <input name="link" #newlink>
@@ -21,3 +21,11 @@
     SubmitLink
   </button>
 </form>
+
+
+<div [ngClass]="'first'">
+    <p [ngClass]="'second'">ngClass as a String</p>
+</div>
+<div [ngClass]=”first second third’”>
+  <p [ngClass]="'fourth'">ngClass as a String</p>
+</div>
